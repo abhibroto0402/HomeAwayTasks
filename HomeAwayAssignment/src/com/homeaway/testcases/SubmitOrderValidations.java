@@ -1,4 +1,4 @@
-package com.homeaway.testsuite;
+package com.homeaway.testcases;
 
 import static org.junit.Assert.*;
 
