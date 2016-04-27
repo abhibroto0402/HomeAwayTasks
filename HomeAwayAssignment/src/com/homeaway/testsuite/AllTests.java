@@ -1,4 +1,4 @@
-package com.homeaway.tests;
+package com.homeaway.testsuite;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
