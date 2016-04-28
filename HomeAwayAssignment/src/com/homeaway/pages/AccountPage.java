@@ -7,7 +7,11 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+/**
+ * This class is used to perform user actions on the account page such as login and navigate to edit profile
+ * @author Abhibroto
+ *
+ */
 public class AccountPage {
 	WebDriver driver;
 	WebElement userName, passwd, loginbutton;
@@ -15,7 +19,12 @@ public class AccountPage {
 	public AccountPage(WebDriver driver) {
 		this.driver = driver;
 	}
-
+/**
+ * 
+ * @param username
+ * @param password
+ * @throws InterruptedException
+ */
 	public void login(String username, String password) throws InterruptedException {
 		this.userName = driver.findElement(By.id("log"));
 		this.passwd = driver.findElement(By.id("pwd"));
