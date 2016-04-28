@@ -22,7 +22,7 @@ public class HomePage {
 	
 	WebElement SEARCH;
 	WebElement CART;
-	WebElement MyAccount;
+	WebElement MyAccount, logout;
 	
 	public HomePage (WebDriver driver){
 		this.driver= driver; 
@@ -53,5 +53,12 @@ public class HomePage {
 		//Check My account page is displayed
 		if (!driver.getTitle().toLowerCase().contains("your account"))
 			Assert.fail("My Account page not displayed");
+	}
+	
+	public void logout(String username){
+		this.logout = driver.findElement(By.id("account_logout"));
+		logout.click();
+		Assert.assertFalse("No User Name", driver.getTitle().contains(username));
+		
 	}
 }

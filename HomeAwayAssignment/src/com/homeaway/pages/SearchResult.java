@@ -39,6 +39,7 @@ public class SearchResult {
 	 */
 	public void addProductToCart (String productLink, boolean continueShopping) throws InterruptedException{
 		selectProductLink (productLink);
+		Thread.sleep(2000);
 		WebElement addToCart = driver.findElement(By.className("input-button-buy"));
 		addToCart.click();
 		
