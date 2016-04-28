@@ -8,9 +8,11 @@ import com.homeaway.testsuite.AllTests;
 public class TestRunner {
    public static void main(String[] args) {
       Result result = JUnitCore.runClasses(AllTests.class);
+      // Display the failures on console
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());
       }
-      System.out.println(result.wasSuccessful());
+      if(result.wasSuccessful())
+    	  System.out.println("All Tests Passed");
    }
 }
