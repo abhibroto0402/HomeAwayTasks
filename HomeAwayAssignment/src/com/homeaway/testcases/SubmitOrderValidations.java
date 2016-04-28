@@ -15,10 +15,18 @@ import com.homeaway.pages.SearchResult;
 /**
  * This is the test case to perform validation related to Submitting an Order
  * 
- * First it looks for the item based on passed parameter; It adds the item to the
- * cart based on passed parameter; On the Checkout window it selects continue; It
- * selects a country based on passed parameter; Verifies the Cost and checks if
- * the total cost is correct summation of other costs
+ * 1) Open the Shopping portal on fireforx browser
+ * 
+ * 2) Search for iPhone 4s by typing in the search box
+ * 
+ * 3) Select the correct item using the link description
+ * 
+ * 4) Add the item to the cart
+ * 
+ * 5) Checkout
+ * 
+ * 6) Verify the Cost and checks if the total cost is correct summation of other
+ * costs
  * 
  * @author Abhibroto
  */
@@ -53,13 +61,13 @@ public class SubmitOrderValidations {
 		// Open the Shopping portal and maximize
 		driver.get(HomePage.PAGE_URL);
 		driver.manage().window().maximize();
-		
+
 		// Enter the search string
 		homePage.searchProduct("iPhone 4s");
-		
-		//Add product to the cart
+
+		// Add product to the cart
 		searchResult.addProductToCart("Apple iPhone 4S 16GB SIM-Free – Black", false);
-		
+
 		// Check the displayed costs
 		checkout.checkPrices("USA");
 	}
