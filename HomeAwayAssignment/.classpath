@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="/Users/h140749/Downloads/selenium-2.53.0/selenium-java-2.53.0.jar"/>
 	<classpathentry kind="lib" path="/Users/h140749/Documents/JARs/java-client-3.2.0.jar"/>
 	<classpathentry kind="lib" path="/Users/h140749/Documents/JARs/selenium-server-standalone-2.47.1.jar"/>
+	<classpathentry kind="lib" path="/Users/h140749/Downloads/org.json.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
